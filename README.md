@@ -1,8 +1,10 @@
+# UIViewAnimationTransitionQueue
+
 Make UIView animation or transition chain more easliy
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![License: MIT](https://img.shields.io/badge/platform-iOS-green.svg)
-![License: MIT](https://img.shields.io/badge/Pod-0.39.0-yellow.svg)
+![License: MIT](https://img.shields.io/badge/Pod-v0.39.0-yellow.svg)
 
 
 ## Contents
@@ -13,13 +15,12 @@ Make UIView animation or transition chain more easliy
 
 ## Requirements
 
-- iOS 7.0+
+- iOS 10.0+
 - Xcode 8.0+
 - Swift 3.0+
 
 ## Installation
 
-<!--
 ### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
@@ -36,7 +37,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'UIViewAnimationTransitionQueue', '0.1.1'
+    pod 'UIViewAnimationTransitionQueue', '~> 0.1.1'
 end
 ```
 
@@ -45,10 +46,10 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
--->
+
 ### Manually
 
-Just copy UIViewAnimationTransitionQueue.swift into your project
+Just copy [UIViewAnimationTransitionQueue.swift](UIViewAnimationTransitionQueue/UIViewAnimationTransitionQueue.swift) into your project
 
 
 ## Usage
@@ -57,7 +58,7 @@ Just copy UIViewAnimationTransitionQueue.swift into your project
 
 `.add`: add animation setting into queue
 
-example in demo
+example in [ViewController](UIViewAnimationTransitionQueue/ViewController.swift)
 
 ```swift
 UIView.animationQ
@@ -85,7 +86,7 @@ UIView.animationQ
 
 `.add`: add transition setting into queue, from view argument needed
 
-example in demo
+example in [ViewController](UIViewAnimationTransitionQueue/ViewController.swift)
 
 ```swift
 UIView.transitionQ
@@ -111,7 +112,7 @@ UIView.transitionQ
 
 `.addAnim`: add animation setting into queue
 
-example in demo
+example in [ViewController](UIViewAnimationTransitionQueue/ViewController.swift)
 
 ```swift
 UIView.transformQ
