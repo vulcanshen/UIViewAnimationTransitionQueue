@@ -19,6 +19,7 @@ Make UIView animation or transition chain more easliy
 
 ## Installation
 
+<!--
 ### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
@@ -35,7 +36,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'UIViewAnimationTransitionQueue', '0.1.0'
+    pod 'UIViewAnimationTransitionQueue', '0.1.1'
 end
 ```
 
@@ -44,7 +45,7 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-
+-->
 ### Manually
 
 Just copy UIViewAnimationTransitionQueue.swift into your project
