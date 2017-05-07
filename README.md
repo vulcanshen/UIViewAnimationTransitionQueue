@@ -1,11 +1,8 @@
 Make UIView animation or transition chain more easliy
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]
-()
-[![License: MIT](https://img.shields.io/badge/platform-iOS-green.svg)]
-()
-[![License: MIT](https://img.shields.io/badge/Pod-0.39.0-yellow.svg)]
-()
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![License: MIT](https://img.shields.io/badge/platform-iOS-green.svg)
+![License: MIT](https://img.shields.io/badge/Pod-0.39.0-yellow.svg)
 
 
 ## Contents
