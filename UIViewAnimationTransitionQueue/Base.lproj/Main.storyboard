@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewAnimationTransitionQueue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEg-fD-ETg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Animation" id="cZh-B7-gol">
+                                        <connections>
+                                            <action selector="startAnimWithSender:" destination="BYZ-38-t0r" id="5we-aK-gvt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CJl-Gi-xRp"/>
+                                    <barButtonItem title="Transition" id="qt4-VE-3S1">
+                                        <connections>
+                                            <action selector="startTransWithSender:" destination="BYZ-38-t0r" id="Xjb-zD-bWJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="j2M-HU-sW1"/>
+                                    <barButtonItem title="Both" id="mA2-0r-xKU">
+                                        <connections>
+                                            <action selector="startBothWithSender:" destination="BYZ-38-t0r" id="zXc-1d-LMB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kI3-FF-PQe">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.51372549020000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8va-4Q-qle"/>
+                                    <constraint firstAttribute="height" constant="50" id="Czd-Ih-gpP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kI3-FF-PQe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Fe-6K-Xpe"/>
+                            <constraint firstItem="tEg-fD-ETg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SvJ-Qf-R3r"/>
+                            <constraint firstItem="kI3-FF-PQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VuK-kq-yGB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tEg-fD-ETg" secondAttribute="bottom" id="tZh-gU-Mq4"/>
+                            <constraint firstAttribute="trailing" secondItem="tEg-fD-ETg" secondAttribute="trailing" id="x39-mP-fbI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vBlock" destination="kI3-FF-PQe" id="IgI-Jl-V5R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
